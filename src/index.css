@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-800 hover:bg-gray-900 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 font-medium px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+  
+  .tech-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .tech-badge-redis {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  .tech-badge-typescript {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .tech-badge-javascript {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .tech-badge-html {
+    @apply bg-orange-100 text-orange-800;
+  }
+  
+  .tech-badge-css {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .tech-badge-nodejs {
+    @apply bg-green-100 text-green-800;
+  }
+}
+
+.cookie-modal {
+  backdrop-filter: blur(4px);
+}
+
+.hero-3d-object {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+}
+
+.stats-number {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.testimonial-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.team-card {
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
